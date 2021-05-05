@@ -1,4 +1,6 @@
-# lit-reader
+# LitReader
+
+Discover more about your favorite literature
 
 ## Build Setup
 
