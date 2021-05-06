@@ -222,9 +222,10 @@ export default {
             it++;
           }
           // plot scatter if it makes more sense
-          let plot_type = 'line'
+          let plot_type = 'line', stack = false;
           if (this.widget.item === 'character' && this.widget.granularity === 'interaction') {
             plot_type = 'bar'
+            stack = true;
           }
           // show
           Chart.register(...registerables)
@@ -243,10 +244,10 @@ export default {
               responsive: true,
               scales: {
                 x: {
-                  stacked: true,
+                  stacked: stack,
                 },
                 y: {
-                  stacked: true,
+                  stacked: stack,
                 }
               },
             }
