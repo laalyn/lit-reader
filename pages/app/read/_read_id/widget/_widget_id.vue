@@ -34,7 +34,6 @@
             <canvas id='chart'></canvas>
           </div>
         </div>
-        <!-- {{ result }} -->
       </div>
     </div>
   </div>
@@ -221,9 +220,13 @@ export default {
             datasets.push(obj)
             it++;
           }
-          // plot scatter if it makes more sense
+          // plot 'heatmap' if it makes more sense
           let plot_type = 'line', stack = false;
           if (this.widget.item === 'character' && this.widget.granularity === 'interaction') {
+            plot_type = 'bar'
+            stack = true; // useful because each bar is one denomination
+          }
+          if (this.widget.item === 'word' && this.widget.granularity === 'line') {
             plot_type = 'bar'
             stack = true;
           }
@@ -233,7 +236,7 @@ export default {
             this.chart.destroy();
           }
           console.log("rendering")
-          // TODO: maybe have this chunk too
+          // TODO: maybe have this chunk too but how
           this.chart = new Chart('chart', {
             type: plot_type,
             data: {
