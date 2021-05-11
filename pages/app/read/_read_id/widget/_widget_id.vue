@@ -1,5 +1,5 @@
 <template>
-  <div class='px-2'>
+  <div class='px-2 py-2'>
     <NuxtLink :to='"/app/read/" + read_id'>Back</NuxtLink>
     <div v-if='error' class='text-red-600'>
       {{ error }}

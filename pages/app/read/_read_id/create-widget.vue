@@ -1,5 +1,5 @@
 <template>
-  <div class='px-2'>
+  <div class='px-2 py-2'>
     <NuxtLink :to='"/app/read/" + read_id'>Back</NuxtLink>
     <form @submit.prevent>
       <input v-model='form.name' type='text' placeholder='Widget name' class='block'>

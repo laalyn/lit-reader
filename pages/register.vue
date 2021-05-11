@@ -1,5 +1,5 @@
 <template>
-  <div class='px-2'>
+  <div class='px-2 py-2'>
     <NuxtLink to='/'>Back</NuxtLink>
     <form @submit.prevent>
       <input v-model='form.email' type='email' placeholder='Email'>
