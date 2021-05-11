@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class='px-2'>
     <NuxtLink to='/app/'>Back</NuxtLink>
     <form @submit.prevent>
       <input v-model='form.read.name' type='text' placeholder='Read name'>

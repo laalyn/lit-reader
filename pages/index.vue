@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class='px-2'>
     <div v-if='this.$auth.loggedIn'>
       <NuxtLink to='/app'>App</NuxtLink>
     </div>

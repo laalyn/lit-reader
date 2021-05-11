@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class='px-2'>
     <button @click='logout' class='block'>Logout</button>
     <NuxtLink to='/app/create-read'>Create read</NuxtLink>
     <div v-if='error' class='text-red-600'>
