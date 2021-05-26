@@ -67,8 +67,8 @@ export default {
           property: '',
         },
         endpoints: {
-          login: { url: 'http://ec2-54-190-44-86.us-west-2.compute.amazonaws.com:6369/api/user/auth', method: 'post' },
-          user: { url: 'http://ec2-54-190-44-86.us-west-2.compute.amazonaws.com:6369/api/user/cur', method: 'get' },
+          login: { url: 'https://d31e8aiboh7enn.cloudfront.net/api/user/auth', method: 'post' },
+          user: { url: 'https://d31e8aiboh7enn.cloudfront.net/api/user/cur', method: 'get' },
         },
       },
     },
